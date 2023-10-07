@@ -1,0 +1,120 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("a2c65f86-931d-4873-a67a-2f0945c5abf3",
+	"00000000-0000-0000-0000-000000000000",
+	"d923df31-2d4f-4454-ba3a-3347665a758b",
+	'Controller',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("1b06e04b-6bbb-4f2d-b046-2b0f300a2c70",
+	112,
+	"a2c65f86-931d-4873-a67a-2f0945c5abf3",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	200,
+	150,
+	0,
+	'4.1.17',
+	'gnc::components::GrandController::Controller');
+INSERT INTO GD_GE
+	VALUES ("d20bbf42-9d65-40a2-90f2-cfcd15be3ad5",
+	"1b06e04b-6bbb-4f2d-b046-2b0f300a2c70",
+	"a2d8f364-6498-4e78-9973-4d39c49fbafd",
+	21,
+	0,
+	'gnc::components::GrandController::Controller::Controller');
+INSERT INTO GD_SHP
+	VALUES ("d20bbf42-9d65-40a2-90f2-cfcd15be3ad5");
+INSERT INTO GD_NCS
+	VALUES ("d20bbf42-9d65-40a2-90f2-cfcd15be3ad5");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"d20bbf42-9d65-40a2-90f2-cfcd15be3ad5");
+INSERT INTO DIM_GE
+	VALUES (144.000000,
+	36.000000,
+	"d20bbf42-9d65-40a2-90f2-cfcd15be3ad5",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("d20bbf42-9d65-40a2-90f2-cfcd15be3ad5",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_DIA
+	VALUES ("1b06e04b-6bbb-4f2d-b046-2b0f300a2c70",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("5a4811c4-64aa-4540-ab23-5ef1f4bd280a",
+	"00000000-0000-0000-0000-000000000000",
+	'setup',
+	'',
+	'create object instance controller of Controller;
+generate Controller1:''start'' to controller;
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0,
+	1);
+INSERT INTO PE_PE
+	VALUES ("5a4811c4-64aa-4540-ab23-5ef1f4bd280a",
+	1,
+	"a2c65f86-931d-4873-a67a-2f0945c5abf3",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("6faaeb79-22d4-436c-b976-aa8853a9d70a",
+	"00000000-0000-0000-0000-000000000000",
+	'ready',
+	'',
+	'select any controller from instances of Controller;
+generate Controller2:''ready'' to controller;
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0,
+	2);
+INSERT INTO PE_PE
+	VALUES ("6faaeb79-22d4-436c-b976-aa8853a9d70a",
+	1,
+	"a2c65f86-931d-4873-a67a-2f0945c5abf3",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("a2c65f86-931d-4873-a67a-2f0945c5abf3",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"7af9765b-0d53-4ce5-a60f-a27af08f289e",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("7af9765b-0d53-4ce5-a60f-a27af08f289e",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'GrandController',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'',
+	'../GrandController.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("d923df31-2d4f-4454-ba3a-3347665a758b",
+	'gnc',
+	1,
+	'../../../gnc.xtuml');
